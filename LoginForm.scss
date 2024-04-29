@@ -1,0 +1,104 @@
+// Global styles
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+// Body styles
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: darkslategray;
+
+    // Login form container styles
+    .login-form-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+
+    // Form styles
+    form {
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        // Input styles
+        .form_wrapper input[type="text"],
+        .form_wrapper input[type="password"] {
+            padding: 10px;
+            border: 2px solid white;
+            width: 100%;
+            border-radius: 25px;
+            outline: none;
+            background-color: transparent;
+            color: white;
+        }
+
+        // Todo container styles
+        .todo-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            // Add button styles
+            .add {
+                margin: 20px;
+                margin-left: 600px;
+            }
+
+            // Todo wrapper input styles
+            .todo-wrapper input {
+                padding: 10px;
+                border: 2px solid #080808;
+                width: 400px;
+                margin: 0.5rem;
+                border-radius: 25px;
+                outline: none;
+                background-color: transparent;
+                color: rgb(7, 7, 7);
+            }
+        }
+    }
+}
+
+// Login form styles
+.login-form {
+    width: 350px;
+    height: 500px;
+    background: red;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 5px 20px 50px #000;
+
+    // Login form input and button styles
+    input {
+        display: block;
+        width: 275px;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #0056b3;
+        }
+    }
+}
